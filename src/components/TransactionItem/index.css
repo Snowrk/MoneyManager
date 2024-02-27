@@ -1,0 +1,30 @@
+/* Write your CSS here */
+
+.btx {
+  border: 1px solid lightgrey;
+  border-top: none;
+  display: flex;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+.btx > p {
+  width: 30%;
+  padding: 0.7rem;
+  margin: 0;
+  flex-shrink: 0;
+  font-size: small;
+}
+
+.btx > button {
+  margin-left: auto;
+}
+
+.delBtn {
+  border: 0;
+  background-color: transparent;
+}
+
+.delBtn > img {
+  width: 100%;
+}

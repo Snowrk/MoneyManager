@@ -1,0 +1,125 @@
+/* Write your CSS here */
+
+.bg {
+  padding: 4rem;
+  font-family: 'Roboto';
+}
+
+.header {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.header > h1 {
+  color: #475569;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.header > p > span {
+  color: #0b69ff;
+  font-weight: bold;
+}
+
+.md-con {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.transactions,
+.history {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.transactions > h1 {
+  color: #1e293b;
+  /* font-weight: normal; */
+  font-size: larger;
+  margin-bottom: 1.5rem;
+}
+
+label > p {
+  color: #7e858e;
+  font-weight: bold;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d7dfe9;
+}
+
+.btn {
+  border: none;
+  background-color: #0b69ff;
+  border-radius: 0.6rem;
+  padding-block: 0.8rem;
+  padding-inline: 1.4rem;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 500;
+  /* font-size: large; */
+}
+
+.history > h1 {
+  color: #334155;
+  /* font-weight: normal; */
+  font-size: larger;
+  margin-bottom: 1.5rem;
+}
+
+.hty-con {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.hty-head {
+  display: flex;
+  border: 1px solid lightgray;
+}
+
+.hty-head > p {
+  width: 30%;
+  padding: 0.7rem;
+  margin-block: 0.3rem;
+  color: #1e293b;
+  font-weight: 500;
+  font-size: small;
+}
+
+@media (min-width: 768px) {
+  .header {
+    text-align: left;
+  }
+  .md-con {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .md-con > li {
+    width: 30%;
+  }
+  .footer {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  .footer > div {
+    width: 48%;
+  }
+}

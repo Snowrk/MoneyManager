@@ -1,0 +1,38 @@
+/* Write your CSS here */
+.box {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-family: 'Roboto';
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.img-sz {
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.balance {
+  border: solid 1px #84cc16;
+  background-color: #ecfccb;
+}
+
+.income {
+  border: solid 1px #06b6d4;
+  background-color: #cffafe;
+}
+
+.expenses {
+  border: solid 1px #7c3aed;
+  background-color: #ede9fe;
+}
+
+.amount {
+  font-size: x-large;
+  margin: 0;
+}
+
+.title {
+  margin-top: 0;
+}
