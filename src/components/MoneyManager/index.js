@@ -27,11 +27,13 @@ class MoneyManager extends Component {
     event.preventDefault()
     const titleVal = document.getElementById('title').value
     const amountVal = parseInt(document.getElementById('amount').value)
-    const typeVal = document.getElementById('type').value
+    let typeVal = document.getElementById('type').value
+    typeVal === 'INCOME'? typeVal='Income':typeVal='Expenses'
+    console.log(typeVal)
     const obj = {id: v4(), title: titleVal, amount: amountVal, type: typeVal}
 
     this.setState(prevState =>
-      typeVal === 'INCOME'
+      typeVal === 'Income'
         ? {
             income: prevState.income + amountVal,
             expenses: prevState.expenses,
@@ -59,7 +61,7 @@ class MoneyManager extends Component {
         ...prevState.historyList.slice(idx + 1),
       ]
       const obj =
-        typeVal === 'INCOME'
+        typeVal === 'Income'
           ? {
               income: prevState.income - amountVal,
               expenses: prevState.expenses,
